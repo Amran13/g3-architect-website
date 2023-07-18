@@ -39,14 +39,17 @@ nav li a {
     font-weight: 500;
 
 }
-.banner-section{
+
+.banner-section {
     text-align: center;
     margin-top: 7.25rem;
 }
-.banner-section img{
+
+.banner-section img {
     margin: 3rem 0;
     width: 100%;
 }
+
 .banner-title {
     text-align: center;
     font-size: 4rem;
@@ -62,7 +65,46 @@ nav li a {
 }
 
 
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
+/* Feautre Style */
+.feature-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+
+}
+
+.feature-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 45%;
+}
+.feature-img-container img{
+    width: 100%;
+}
+
+.feature-banner {
+    margin-left: 4rem;
+    width: 45%;
+}
+
+.feature-title {
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.feature-text {
+    color: #727272;
+    line-height: 26px;
+    margin: 1.5rem 0;
+}
 
 
 
@@ -77,58 +119,106 @@ nav li a {
     border: none;
     cursor: pointer;
 }
+.bright{
+    color: #FF900E;
+}
+.hide{
+    display: none;
+}
 
 
 /* responsive media query */
 @media screen and (max-width : 576px) {
-    header{
+    header {
         padding: 20px 10px;
     }
-    nav{
+    .header-title-break{
+        display: none;
+    }
+    .header-text-break{
+        display: none;
+    }
+    nav {
         flex-direction: column;
     }
-    .nav-title{
+    .nav-title {
         font-size: 1.5rem;
     }
-    nav ul{
+    nav ul {
         margin: 20px 0;
     }
-    nav>ul>li{
+    nav>ul>li {
         margin-right: 1rem;
     }
-    .banner-section{
+    .banner-section {
         margin-top: 3rem;
     }
-    .banner-title{
+    .banner-title {
         font-size: 3rem;
     }
-    .banner-section img{
+    .banner-section img {
         margin: 1rem 0rem;
     }
-    .btn{
+    .btn {
         padding: 10px 15px;
     }
+    
+/* feature responsivenesss */
+.feature-section{
+    flex-direction: column;
+    padding: 20px 10px;
 }
+.feature-img-container{
+    width: 90%;
+}
+.feature-banner{
+    margin-top: 30px;
+    margin-left: 1rem;
+    width: 90%;
+}
+.feature-title{
+    font-size: 2rem;
+}
+
+
+}
+
 @media screen and (min-width : 576px) and (max-width: 960px) {
-    header{
+    .feature-section{
+        padding: 20px 30px;
+        margin-top: 30px;
+    }
+    .feature-title{
+        font-size: 2.5rem;
+    }
+    header {
         padding: 50px;
     }
-    nav{
+    
+    .header-text-break{
+        display: none;
+    }
+    nav {
         flex-direction: column;
     }
-    nav ul{
+    
+    nav ul {
         margin: 30px 0;
     }
-    .banner-section{
+
+    .banner-section {
         margin-top: 3rem;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 4rem;
     }
-    .banner-section img{
+
+    .banner-section img {
         margin: 1rem 0rem;
     }
-    .btn{
+
+    .btn {
         padding: 10px 15px;
     }
 }
